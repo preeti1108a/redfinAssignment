@@ -63,6 +63,7 @@ public class RealEstatePage extends Testbase {
 		int index=Integer.parseInt(Value);		
 		JavascriptExecutor je = (JavascriptExecutor) driver;
 		je.executeScript("document.getElementsByClassName('option')["+index+"].click();" );
+		logger.log(LogStatus.PASS, "minimum value entered");
 	}
 
 //	entering maximum value
@@ -74,6 +75,7 @@ public class RealEstatePage extends Testbase {
 		int index=Integer.parseInt(Value);		
 		JavascriptExecutor je = (JavascriptExecutor) driver;
 		je.executeScript("document.getElementsByClassName('option')["+index+"].click();" );
+		logger.log(LogStatus.PASS, "maximum value entered");
 	}
 
 //	validating search result
